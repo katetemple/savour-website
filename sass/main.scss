@@ -1,0 +1,48 @@
+// Theme Colours
+$primary: #6c8f3b;
+$secondary: #df7300;
+
+// Variables for button styles
+$btn-color: #1b1b1b;
+$btn-border-radius: 40px;
+$btn-border: 2px solid #fffcec;
+$btn-padding-y: 10px;
+$btn-padding-x: 15px;
+
+@mixin custom-button {
+    color: $btn-color;
+    border: 0;
+    padding: $btn-padding-y $btn-padding-x;
+    border-radius: $btn-border-radius;
+}
+
+.custom-btn {
+    @include custom-button;
+}
+
+header {
+    position: relative;
+    height: 850px;
+    width: 100%;
+    background: url(../images/wave1.png) no-repeat bottom;
+    background-size: cover;
+}
+
+.navbar {
+    font-weight: 600;
+    font-size: large;
+}
+
+.custom-image {
+    width: 500px;
+}
+
+.bg-off-white {
+    background-color: #fffcec;
+}
+
+// Imprort mixins
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
