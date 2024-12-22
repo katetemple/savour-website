@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="./css/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <title>Savour</title>
+    </head>
+    <body>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg sticky-top bg-off-white">
+            <div class="container-xl">
+                <!-- Toggle button for collapsing -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                    <!-- Left elements -->
+                    <div class="d-flex">
+                        <!-- Links -->
+                        <div class="navbar-nav gap-lg-5">
+                            <a class="nav-link text-black fw-medium fs-5" href="index.html">Home</a>
+                            <a class="nav-link text-black fw-medium fs-5" href="about.html"
+                                >About Us</a
+                            >
+                            <a class="nav-link text-black fw-medium fs-5" href="business.html"
+                                >Business</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Center Logo -->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img
+                            src="images/SavourLogoBlack.png"
+                            alt="Logo"
+                            height="70"
+                            class="d-inline-block align-text-center"
+                        />
+                    </a>
+
+                    <!-- Right elements -->
+                    <form class="navbar-nav gap-3">
+                        <button
+                            class="custom-btn-outline border-black bg-transparent text-black fw-medium"
+                            type="button"
+                        >
+                            Get The App
+                        </button>
+                        <button
+                            class="custom-btn-outline border-black bg-transparent text-black fw-medium"
+                            type="button"
+                        >
+                            Business Sign Up
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="bg-off-white">
+            <!-- Header Content -->
+            <div class="container-xl py-5">
+                <div class="row align-items-center mt-5">
+                    <div class="col-md-6">
+                        <h1 class="mb-5 display-1 fw-bold text-black">Partner with Us!</h1>
+                        <p class="text-black">
+                            Join a growing network of businesses reducing waste, increasing profits,
+                            and making a positive impact by selling surplus food directly to local
+                            communities through Savour.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 d-flex flex-column align-items-center">
+                        <form class="w-75 bg-secondary-light rounded-5 p-5">
+                            <p class="fw-bold fs-2 text-off-white">Get In Touch.</p>
+                            <div class="mb-3">
+                                <input
+                                    class="form-control bg-off-white border-0 p-3"
+                                    type="text"
+                                    placeholder="Business Name"
+                                    aria-label="default input example"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <input
+                                    class="form-control bg-off-white border-0 p-3"
+                                    type="text"
+                                    placeholder="Business building number + street name"
+                                    aria-label="default input example"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <input
+                                    class="form-control bg-off-white border-0 p-3"
+                                    type="text"
+                                    placeholder="City or Town"
+                                    aria-label="default input example"
+                                />
+                            </div>
+                            <button type="submit" class="custom-btn text-off-white bg-black fs-5">
+                                Next Step ->
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 900 128"
+        >
+            <rect x="0" y="0" width="900" height="128" fill="#fffcec" />
+            <path
+                d="M0 83L37.5 80.8C75 78.7 150 74.3 225 76C300 77.7 375 85.3 450 91.2C525 97 600 101 675 94.5C750 88 825 71 862.5 62.5L900 54L900 0L862.5 0C825 0 750 0 675 0C600 0 525 0 450 0C375 0 300 0 225 0C150 0 75 0 37.5 0L0 0Z"
+                fill="#f4a24b"
+            />
+            <path
+                d="M0 45L37.5 48.5C75 52 150 59 225 58.7C300 58.3 375 50.7 450 50.8C525 51 600 59 675 60.7C750 62.3 825 57.7 862.5 55.3L900 53L900 0L862.5 0C825 0 750 0 675 0C600 0 525 0 450 0C375 0 300 0 225 0C150 0 75 0 37.5 0L0 0Z"
+                fill="#fffcec"
+            />
+        </svg>
+
+        <!-- PARTNERS SECTION -->
+        <div class="container-fluid bg-off-white py-5">
+            <div class="container-xl my-5">
+                <div class="row pt-5">
+                    <h2 class="text-black text-center display-3 fw-bold mt-3">
+                        Some of Our <span class="text-primary">Trusted Partners</span>
+                    </h2>
+                </div>
+                <div class="row text-center align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5">
+                            <div class="card-body">
+                                <img src="images/LidlLogo.png" class="img-fluid" alt="Lidl Logo" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5">
+                            <div class="card-body">
+                                <img
+                                    src="images/CentraLogo 2.png"
+                                    class="img-fluid"
+                                    alt="Centra Logo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5">
+                            <div class="card-body">
+                                <img
+                                    src="images/TescoLogo.png"
+                                    class="img-fluid"
+                                    alt="Tesco Logo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5">
+                            <div class="card-body">
+                                <img
+                                    src="images/SupervaluLogo.png"
+                                    class="img-fluid"
+                                    alt="Supervalu Logo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ SECTION -->
+        <div class="container-fluid py-5 bg-primary">
+            <div class="container-xl py-5">
+                <div class="row text-center my-5 justify-content-center">
+                    <div class="col-md-8">
+                        <h3 class="fw-bold fs-1 text-primary-light">FAQs</h3>
+                        <h2 class="fw-bold display-4 text-off-white mb-5">Find Out More</h2>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item bg-off-white border-0 border-bottom">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button bg-primary text-off-white fs-5 p-4"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOne"
+                                    >
+                                        How can my business start selling surplus food on Savour?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseOne"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong>Getting started is simple!</strong> Create an
+                                            account, upload details and images of your surplus food,
+                                            and set a discounted price. Our platform connects you
+                                            with local customers ready to purchase surplus items,
+                                            reducing waste and boosting your revenue.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-off-white border-0 border-bottom">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed bg-primary text-off-white fs-5 p-4"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        What types of businesses can partner with Savour?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong>We welcome a variety of businesses,</strong>
+                                            including grocery stores, bakeries, restaurants, cafés,
+                                            and wholesalers. If your business generates surplus
+                                            food, Savour can help you find customers to reduce waste
+                                            and increase profits.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-off-white border-0 border-bottom">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed bg-primary text-off-white fs-5 p-4"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree"
+                                    >
+                                        How does Savour help increase my sales and visibility?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseThree"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            Savour promotes your surplus items to local users
+                                            actively searching for deals. By joining,
+                                            <strong
+                                                >you increase foot traffic, attract new customers,
+                                                and enhance your brand’s sustainability
+                                                image</strong
+                                            >
+                                            – all while minimizing waste.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-off-white border-0 border-bottom">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed bg-primary text-off-white fs-5 p-4"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour"
+                                        aria-expanded="false"
+                                        aria-controls="collapseFour"
+                                    >
+                                        Is there a fee for listing surplus food on Savour?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseFour"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong>Listing surplus items is free,</strong> and we
+                                            only take a small commission when your items sell. This
+                                            means there’s no risk in getting started, and you only
+                                            pay when you benefit from the sale.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-off-white border-0 border-bottom">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed bg-primary text-off-white fs-5 p-4"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive"
+                                        aria-expanded="false"
+                                        aria-controls="collapseFive"
+                                    >
+                                        How does Savour ensure food safety and quality?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseFive"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            We encourage businesses to list items that are safe and
+                                            high-quality but nearing their best-before dates.
+                                            <strong>Clear labeling and transparency</strong> ensure
+                                            customers know what they are purchasing, fostering trust
+                                            and repeat sales.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARDS -->
+        <div class="container-fluid bg-off-white py-5">
+            <div class="container-xl my-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-md-12 text-center my-5">
+                        <h2 class="display-4 fw-bold">
+                            Learn about our services for businesses like yours
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center pb-5">
+                    <div class="col-md-5 col-sm-12 pb-5">
+                        <div class="card mb-5">
+                            <img
+                                src="images/SellSurplus.jpg"
+                                class="card-img-top card-img-bottom img-fluid mb-4"
+                                alt="Takeaway bag"
+                            />
+                            <div class="card-body">
+                                <h3 class="card-title mb-4 fw-bold">Sell Surplus with Ease</h3>
+                                <p class="card-text mb-4">
+                                    Turn excess inventory into revenue by listing surplus food
+                                    directly on Savour. Attract local buyers and reduce food waste
+                                    effortlessly.
+                                </p>
+                                <button type="button" class="custom-btn bg-secondary">
+                                    <p class="m-0">Start Selling Today</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 pb-5">
+                        <div class="card">
+                            <img
+                                src="images/Customer.jpg"
+                                class="card-img-top card-img-bottom img-fluid mb-4"
+                                alt="Business women shaking hands"
+                            />
+                            <div class="card-body">
+                                <h3 class="card-title mb-4 fw-bold">
+                                    Drive Foot Traffic & Build Loyalty
+                                </h3>
+                                <p class="card-text mb-4">
+                                    Bring new customers through your doors by offering surplus food
+                                    at discounted rates. Boost community engagement and drive repeat
+                                    business.
+                                </p>
+                                <button type="button" class="custom-btn bg-secondary">
+                                    <p class="m-0">Grow Your Impact</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-5">
+                    <h2 class="text-black text-center display-3 fw-bold mt-5">
+                        Driving Business Growth
+                    </h2>
+                </div>
+                <div class="row text-center pb-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5 bg-off-white my-5 rounded-5">
+                            <div class="card-body">
+                                <i class="bi bi-trash text-primary fw-bold display-4"></i>
+                                <p class="display-5 fw-bold text-uppercase">85% Reduced</p>
+                                <h3 class="fs-2 fw-light text">In Food Waste</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5 bg-off-white my-5 rounded-5">
+                            <div class="card-body">
+                                <i class="bi bi-person-walking text-primary fw-bold display-4"></i>
+                                <p class="display-5 fw-bold text-uppercase">30% Increase</p>
+                                <h3 class="fs-2 fw-light text-black">In Foot Traffic</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5 bg-off-white my-5 rounded-5">
+                            <div class="card-body">
+                                <i class="bi bi-emoji-smile text-primary fw-bold display-4"></i>
+                                <p class="display-5 fw-bold text-uppercase">95% Happy</p>
+                                <h3 class="fs-2 fw-light text-black">Customers</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5 bg-off-white my-5 rounded-5">
+                            <div class="card-body">
+                                <i class="bi bi-cash-stack text-primary fw-bold display-4"></i>
+                                <p class="display-5 fw-bold text-uppercase">€500k Revenue</p>
+                                <h3 class="fs-2 fw-light text-black">Generated by businesses</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 900 128"
+        >
+            <rect x="0" y="0" width="900" height="128" fill="#fffcec" />
+            <path
+                d="M0 51L37.5 49.3C75 47.7 150 44.3 225 51.2C300 58 375 75 450 75.8C525 76.7 600 61.3 675 49.5C750 37.7 825 29.3 862.5 25.2L900 21L900 129L862.5 129C825 129 750 129 675 129C600 129 525 129 450 129C375 129 300 129 225 129C150 129 75 129 37.5 129L0 129Z"
+                fill="#f4a24b"
+            />
+            <path
+                d="M0 70L37.5 77.3C75 84.7 150 99.3 225 99.8C300 100.3 375 86.7 450 76.3C525 66 600 59 675 65.2C750 71.3 825 90.7 862.5 100.3L900 110L900 129L862.5 129C825 129 750 129 675 129C600 129 525 129 450 129C375 129 300 129 225 129C150 129 75 129 37.5 129L0 129Z"
+                fill="#df7300"
+            />
+        </svg>
+        <div class="container-fluid bg-secondary">
+            <div class="container-xl">
+                <div class="row text-off-white pt-4 pb-5">
+                    <h1 class="display-4 fw-bold text-center">Join us in Making a Difference.</h1>
+                    <div class="text-center">
+                        <button type="button" class="custom-btn bg-off-white mt-4 mb-5">
+                            <p class="m-0 text-black fw-semibold">Download The App</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row text-center text-off-white">
+                    <div class="col-12 d-flex justify-content-between">
+                        <p class="fw-semibold">About Us</p>
+                        <p class="fw-semibold">Business Goals</p>
+                        <p class="fw-semibold">Our Impact</p>
+                        <p class="fw-semibold">Community</p>
+                        <p class="fw-semibold">Contact Us</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between text-off-white pt-5">
+                <div>
+                    <p class="fs-6">© Savour 2024</p>
+                </div>
+                <div class="d-flex gap-4">
+                    <p class="fs-6">Privacy Policy</p>
+                    <p class="fs-6">Terms and Conditions</p>
+                    <p class="fs-6">Cookie Policy</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

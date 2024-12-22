@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="./css/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <title>Savour</title>
+    </head>
+    <body>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg sticky-top bg-off-white">
+            <div class="container-xl">
+                <!-- Toggle button for collapsing -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                    <!-- Left elements -->
+                    <div class="d-flex">
+                        <!-- Links -->
+                        <div class="navbar-nav gap-lg-5">
+                            <a class="nav-link text-black fw-medium fs-5" href="index.html">Home</a>
+                            <a class="nav-link text-black fw-medium fs-5" href="about.html"
+                                >About Us</a
+                            >
+                            <a class="nav-link text-black fw-medium fs-5" href="business.html"
+                                >Business</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Center Logo -->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img
+                            src="images/SavourLogoBlack.png"
+                            alt="Savour Logo"
+                            height="70"
+                            class="d-inline-block align-text-center"
+                        />
+                    </a>
+
+                    <!-- Right elements -->
+                    <form class="navbar-nav gap-3">
+                        <button
+                            class="custom-btn-outline border-black bg-transparent text-black fw-medium"
+                            type="button"
+                        >
+                            Get The App
+                        </button>
+                        <button
+                            class="custom-btn-outline border-black bg-transparent text-black fw-medium"
+                            type="button"
+                        >
+                            Business Sign Up
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="bg-off-white">
+            <!-- Header Content -->
+            <div class="container-xl">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="text-black my-5 display-1 fw-bold">About Savour</h1>
+                        <p>Reducing food waste, saving money, and building a sustainable future.</p>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <img
+                            src="images/eatingIllustration.png"
+                            alt="Savour eating illustration"
+                            class="img-fluid"
+                        />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 128">
+            <rect x="0" y="0" width="900" height="128" fill="#fffcec" />
+            <path
+                d="M0 43L37.5 43.8C75 44.7 150 46.3 225 53.8C300 61.3 375 74.7 450 81.8C525 89 600 90 675 85.8C750 81.7 825 72.3 862.5 67.7L900 63L900 0L862.5 0C825 0 750 0 675 0C600 0 525 0 450 0C375 0 300 0 225 0C150 0 75 0 37.5 0L0 0Z"
+                fill="#abd571"
+            />
+            <path
+                d="M0 12L37.5 16.7C75 21.3 150 30.7 225 39.3C300 48 375 56 450 52.7C525 49.3 600 34.7 675 35C750 35.3 825 50.7 862.5 58.3L900 66L900 0L862.5 0C825 0 750 0 675 0C600 0 525 0 450 0C375 0 300 0 225 0C150 0 75 0 37.5 0L0 0Z"
+                fill="#fffcec"
+            />
+        </svg>
+
+        <!-- About + Team Section -->
+        <div class="container-fluid py-5 bg-off-white">
+            <div class="container-xl">
+                <!-- About Savour -->
+                <div class="row pb-5 my-5">
+                    <div class="col-md-6 my-5">
+                        <h2 class="my-5 display-3 fw-bold">Savour</h2>
+                        <p>
+                            Savour is a food-saving app designed to help individuals and communities
+                            reduce food waste, save money, and support sustainability. With features
+                            like a fridge tracker to monitor expiration dates, a shop section
+                            offering surplus food from local businesses, and a recipe generator that
+                            makes the most of what you already have, Savour empowers users to take
+                            control of their food habits. Our goal is simple: to make saving food
+                            easy, accessible, and impactful, fostering a community committed to
+                            reducing waste and creating a brighter, more sustainable future for
+                            everyone.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <img
+                            src="images/food.jpg"
+                            alt="Food table"
+                            class="img-fluid rounded-circle custom-image"
+                        />
+                    </div>
+                </div>
+
+                <!-- Team Section -->
+                <div class="row justify-content-center pt-5">
+                    <div class="col-md-8 text-center mt-5">
+                        <h2 class="display-3 fw-bold">Our Small but Mighty Team!</h2>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-md-3 col-sm-6 my-5 text-center text-md-start">
+                        <img src="images/KateHeadshot.png" alt="KateHeadshot" class="img-fluid" />
+                        <p class="fs-3 mt-4 fw-semibold">Kate</p>
+                        <p>
+                            The visionary behind Savour, Kate is passionate about sustainability and
+                            led the charge in designing an app that makes reducing food waste simple
+                            and rewarding.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-5 text-center text-md-start">
+                        <img src="images/JoshHeadshot.png" alt="Josh Headshot" class="img-fluid" />
+                        <p class="fs-3 mt-4 fw-semibold">Josh</p>
+                        <p>
+                            As the tech wizard, Josh brought Savour to life with seamless
+                            functionality and user-friendly features, ensuring the app runs smoothly
+                            for everyone.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-5 text-center text-md-start">
+                        <img
+                            src="images/MatthewHeadshot.png"
+                            alt="Matthew Headshot"
+                            class="img-fluid"
+                        />
+                        <p class="fs-3 mt-4 fw-semibold">Matthew</p>
+                        <p>
+                            Matthew’s creativity shaped the app’s design, crafting an intuitive and
+                            visually engaging experience that keeps users coming back.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-5 text-center text-md-start">
+                        <img src="images/TomHeadshot.png" alt="Tom Headshot" class="img-fluid" />
+                        <p class="fs-3 mt-4 fw-semibold">Tom</p>
+                        <p>
+                            Tom connects Savour with local businesses and users, driving
+                            partnerships and outreach to expand the app’s impact across communities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Impact Section -->
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 900 128"
+        >
+            <rect x="0" y="0" width="900" height="128" fill="#fffcec" />
+            <path
+                d="M0 51L37.5 49.3C75 47.7 150 44.3 225 51.2C300 58 375 75 450 75.8C525 76.7 600 61.3 675 49.5C750 37.7 825 29.3 862.5 25.2L900 21L900 129L862.5 129C825 129 750 129 675 129C600 129 525 129 450 129C375 129 300 129 225 129C150 129 75 129 37.5 129L0 129Z"
+                fill="#abd571"
+            />
+            <path
+                d="M0 70L37.5 77.3C75 84.7 150 99.3 225 99.8C300 100.3 375 86.7 450 76.3C525 66 600 59 675 65.2C750 71.3 825 90.7 862.5 100.3L900 110L900 129L862.5 129C825 129 750 129 675 129C600 129 525 129 450 129C375 129 300 129 225 129C150 129 75 129 37.5 129L0 129Z"
+                fill="#6c8f3b"
+            />
+        </svg>
+        <div class="container-fluid bg-primary pb-5">
+            <div class="container-xl">
+                <div class="row pb-5">
+                    <h2 class="text-off-white text-center display-1 fw-bold mt-5">
+                        Savours impact
+                    </h2>
+                </div>
+                <div class="row text-center pb-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5 bg-off-white my-5 rounded-5">
+                            <div class="card-body">
+                                <i class="bi bi-basket3 text-secondary fw-bold display-4"></i>
+                                <p class="display-4 fw-bold text-uppercase">50+ MILLION</p>
+                                <h3 class="fs-2 fw-light text">Meals Saved</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5 bg-off-white my-5 rounded-5">
+                            <div class="card-body">
+                                <i class="bi bi-buildings text-secondary fw-bold display-4"></i>
+                                <p class="display-4 fw-bold text-uppercase">40k+</p>
+                                <h3 class="fs-2 fw-light text-black">Business Partners</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5 bg-off-white my-5 rounded-5">
+                            <div class="card-body">
+                                <i class="bi bi-person-badge text-secondary fw-bold display-4"></i>
+                                <p class="display-4 fw-bold text-uppercase">20+ million</p>
+                                <h3 class="fs-2 fw-light text-black">Registered Users</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-3 p-5 bg-off-white my-5 rounded-5">
+                            <div class="card-body">
+                                <i class="bi bi-cash-stack text-secondary fw-bold display-4"></i>
+                                <p class="display-4 fw-bold text-uppercase">€250k</p>
+                                <h3 class="fs-2 fw-light text-black">Saved by Our Users</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="custom-btn bg-off-white my-5">
+                        <p class="m-0 fs-4 fw-semibold text-black">Download Our App</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="container-fluid bg-off-white py-5">
+            <div class="container-xl py-5">
+                <div class="row py-5">
+                    <div class="col-md-6 text-center">
+                        <img
+                            src="images/FAQ.jpg"
+                            alt="Café Image"
+                            class="img-fluid rounded-circle custom-image"
+                        />
+                    </div>
+                    <div class="col-md-6 my-5">
+                        <h2 class="my-5 display-4 fw-bold">FAQs</h2>
+                        <div class="accordion" id="accordionExample">
+                            <div
+                                class="accordion-item bg-off-white border-0 border-bottom border-black"
+                            >
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button bg-off-white text-black fs-4 p-4"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOne"
+                                    >
+                                        How can my business start working with Savour?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseOne"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong
+                                                >Sign up, create a profile, and start listing
+                                                surplus food.</strong
+                                            >
+                                            Local customers can browse and buy, helping you reduce
+                                            waste and earn extra revenue.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item bg-off-white border-0 border-bottom border-black"
+                            >
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed bg-off-white text-black fs-4 p-4"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        How does using Savour contribute to reducing my carbon
+                                        footprint?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong
+                                                >Selling surplus food reduces landfill waste and
+                                                cuts methane emissions.</strong
+                                            >
+                                            This lowers your carbon footprint and supports
+                                            sustainability.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item bg-off-white border-0 border-bottom border-black"
+                            >
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed bg-off-white text-black fs-4 p-4"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree"
+                                    >
+                                        Is the Savour app free to use?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseThree"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong
+                                                >Yes, the app is free to download and use.</strong
+                                            >
+                                            Businesses pay a small commission only when items sell –
+                                            no upfront costs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item bg-off-white border-0 border-bottom border-black"
+                            >
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed bg-off-white text-black fs-4 p-4"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour"
+                                        aria-expanded="false"
+                                        aria-controls="collapseFour"
+                                    >
+                                        What platforms is Savour available on?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseFour"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong
+                                                >Savour is available on iOS, Android, and the
+                                                web.</strong
+                                            >
+                                            Manage listings and sales from anywhere, anytime.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 900 128"
+        >
+            <rect x="0" y="0" width="900" height="128" fill="#fffcec" />
+            <path
+                d="M0 51L37.5 49.3C75 47.7 150 44.3 225 51.2C300 58 375 75 450 75.8C525 76.7 600 61.3 675 49.5C750 37.7 825 29.3 862.5 25.2L900 21L900 129L862.5 129C825 129 750 129 675 129C600 129 525 129 450 129C375 129 300 129 225 129C150 129 75 129 37.5 129L0 129Z"
+                fill="#abd571"
+            />
+            <path
+                d="M0 70L37.5 77.3C75 84.7 150 99.3 225 99.8C300 100.3 375 86.7 450 76.3C525 66 600 59 675 65.2C750 71.3 825 90.7 862.5 100.3L900 110L900 129L862.5 129C825 129 750 129 675 129C600 129 525 129 450 129C375 129 300 129 225 129C150 129 75 129 37.5 129L0 129Z"
+                fill="#6c8f3b"
+            />
+        </svg>
+        <div class="container-fluid bg-primary">
+            <div class="container-xl">
+                <div class="row text-off-white pt-4 pb-5">
+                    <h1 class="display-4 fw-bold text-center">Join us in Making a Difference.</h1>
+                    <div class="text-center">
+                        <button type="button" class="custom-btn bg-off-white mt-4 mb-5">
+                            <p class="m-0 text-black fw-semibold">Download The App</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row text-center text-off-white">
+                    <div class="col-12 d-flex justify-content-between">
+                        <p class="fw-semibold">About Us</p>
+                        <p class="fw-semibold">Business Goals</p>
+                        <p class="fw-semibold">Our Impact</p>
+                        <p class="fw-semibold">Community</p>
+                        <p class="fw-semibold">Contact Us</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between text-off-white pt-5">
+                <div>
+                    <p class="fs-6">© Savour 2024</p>
+                </div>
+                <div class="d-flex gap-4">
+                    <p class="fs-6">Privacy Policy</p>
+                    <p class="fs-6">Terms and Conditions</p>
+                    <p class="fs-6">Cookie Policy</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

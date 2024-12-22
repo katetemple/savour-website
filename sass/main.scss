@@ -1,48 +1,130 @@
+// Import fonts
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=League+Spartan:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+@import "../node_modules/bootstrap/scss/functions";
+
 // Theme Colours
 $primary: #6c8f3b;
+$primary-dark: #4d652b;
+$primary-light: #bfe18f;
 $secondary: #df7300;
+$secondary-light: #f4a24b;
+$off-white: #fffcec;
+
+// Imprort variables mixins
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+    "primary": $primary,
+    "primary-dark": $primary-dark,
+    "primary-light": $primary-light,
+    "secondary": $secondary,
+    "secondary-light": $secondary-light,
+    "off-white": $off-white,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/mixins";
 
 // Variables for button styles
-$btn-color: #1b1b1b;
+$btn-color: $off-white;
 $btn-border-radius: 40px;
-$btn-border: 2px solid #fffcec;
+$btn-border: 2px solid $off-white;
 $btn-padding-y: 10px;
 $btn-padding-x: 15px;
 
+// Variables for custom card
+$card-bg: $off-white;
+$card-border-radius: 30px;
+$card-cap-padding-y: 0px;
+$card-cap-padding-x: 0px;
+$card-spacer-y: 0px;
+$card-spacer-x: 0px;
+$card-border-color: none;
+
+$heading-font-family: "Sansita", sans-serif;
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $heading-font-family;
+}
+
+p,
+a {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 @mixin custom-button {
+    font-family: "Baloo 2", sans-serif;
     color: $btn-color;
-    border: 0;
+    border: 3px;
     padding: $btn-padding-y $btn-padding-x;
     border-radius: $btn-border-radius;
+    box-sizing: border-box;
 }
 
 .custom-btn {
     @include custom-button;
 }
 
-header {
-    position: relative;
-    height: 850px;
-    width: 100%;
-    background: url(../images/wave1.png) no-repeat bottom;
-    background-size: cover;
+.custom-btn-outline {
+    @include custom-button;
+    border: $btn-border;
+    color: $btn-color;
 }
 
-.navbar {
-    font-weight: 600;
-    font-size: large;
+$hover-bg-primary: darken($primary, 5%);
+$hover-bg-secondary: darken($secondary, 5%);
+$hover-bg-off-white: darken(#ffffff, 10%);
+
+.custom-btn.bg-primary {
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $hover-bg-primary !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.custom-btn.bg-secondary {
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $hover-bg-secondary !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.custom-btn.bg-off-white {
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $hover-bg-off-white !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .custom-image {
-    width: 500px;
+    width: 550px;
+}
+
+.text-off-white {
+    color: $off-white;
 }
 
 .bg-off-white {
-    background-color: #fffcec;
+    background-color: $off-white;
 }
 
-// Imprort mixins
-@import "../node_modules/bootstrap/scss/mixins";
+.link-off-white {
+    color: $off-white;
+}
 
 // Import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
